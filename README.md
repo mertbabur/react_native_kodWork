@@ -4,6 +4,8 @@ Ufak bir iş arama uygulaması.
 
 Api üzerinden veriler çekilmiştir.
 
+Redux ile state yönetimi yapılmıştır.
+
 ## API LİNK :
 
 ```
@@ -11,6 +13,8 @@ https://www.themuse.com/api/public/jobs?page=0
 ```
 
 ## UYGULAMA VİDEOSU :
+
+https://youtu.be/tLsovdP_Bfs
 
 ## UYGULAMA İÇİ RESİMLER :
 ![1](app_pics/1.PNG)
