@@ -8,18 +8,23 @@ const Drawer = createDrawerNavigator();
 
 const Router = () => {
     return (
-        <NavigationContainer>
+
             <Drawer.Navigator initialRouteName="JobsPage">
                 <Drawer.Screen name={"JobsPage"} component={Jobs} options={{
                     title: "JOBS",
-                    drawerLabel: "JOBS"
+                    headerTitleAlign: 'center',
+                    headerTitleStyle:{color: '#ef5350', fontWeight: 'bold'},
+                    drawerLabel: "JOBS",
+                    drawerActiveTintColor: '#ef5350',
                 }} />
                 <Drawer.Screen name={"FavoritedJobsPage"} component={FavoritedJobs} options={{
                     title: "FAVORITED JOBS",
-                    drawerLabel: "FAVORITED JOBS"
+                    headerTitleAlign: 'center',
+                    headerTitleStyle:{color: '#ef5350', fontWeight: 'bold'},
+                    drawerLabel: "FAVORITED JOBS",
+                    drawerActiveTintColor: '#ef5350'
                 }} />
             </Drawer.Navigator>
-        </NavigationContainer>
     );
 }
 

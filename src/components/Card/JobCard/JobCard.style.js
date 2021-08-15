@@ -38,5 +38,16 @@ export default StyleSheet.create({
         fontWeight: 'bold',
         fontSize: 20,
         color: '#ef5350'
+    },
+    remove_button: {
+        backgroundColor: '#ef5350',
+        alignItems: 'center',
+        margin: 10,
+        borderRadius: 10,
+        paddingVertical: 5
+    },
+    remove_text: {
+        color: 'white',
+        fontSize: 20
     }
 })
