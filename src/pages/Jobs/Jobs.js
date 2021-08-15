@@ -1,6 +1,6 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import styles from './Jobs.style';
-import {FlatList, Text, View} from "react-native";
+import {ActivityIndicator, FlatList, Text, View} from "react-native";
 import useFetch from "../../hooks/useFetch/useFetch";
 import JobCard from "../../components/Card/JobCard";
 
@@ -13,7 +13,11 @@ const Jobs = () => {
 
     return(
         <View style={styles.container}>
-            <FlatList keyExtractor={(item, index) => index.toString()} data={data.results} renderItem={renderJobs}/>
+            {loading ?
+            <ActivityIndicator color='#ef5350' size='large' /> :
+            <FlatList
+                keyExtractor={(item, index) => index.toString()}
+                data={data.results} renderItem={renderJobs} />}
         </View>
     )
 }
